@@ -1,0 +1,76 @@
+body {
+	 background-color: #f5f3f4;
+}
+ .veil {
+	 display: block;
+	 opacity: 0;
+	 height: 100%;
+	 background-color: rgba(255, 255, 255, 0.8);
+	 text-align: center;
+	 font-size: 2em;
+	 text-decoration: none;
+	 transition: opacity 0.3s ease;
+}
+ .stack__picture-text {
+	 text-transform: uppercase;
+	 color: red;
+	 margin: 0.5em auto 0;
+}
+ .stack__picture-icon {
+	 color: #000;
+	 padding-top: 1em;
+}
+ .wrapper {
+	 padding-top: 5rem;
+	 width: 90%;
+	 max-width: 75rem;
+	 background-color: white;
+	 margin-left: auto;
+	 margin-right: auto;
+	 position: relative;
+}
+ section {
+	 position: relative;
+	 z-index: 0;
+}
+ .stack__picture {
+	 position: absolute;
+	 width: 30%;
+	 height: 12.5rem;
+	 border: 5px solid #fff;
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+ .stack__picture:hover {
+	 z-index: 3;
+}
+ .stack__picture:hover .veil {
+	 opacity: 1;
+}
+ .stack__picture:nth-child(1) {
+	 left: -1%;
+	 transform: rotate(-7deg);
+	 background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/48/Real_Oviedo_1926.jpg);
+}
+ .stack__picture:nth-child(2) {
+	 transform: rotate(-3deg);
+	 top: 1%;
+	 left: 18%;
+	 z-index: 2;
+	 background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fd/Going_to_the_Sun_Mountain_1932.jpg);
+	 background-position: center;
+}
+ .stack__picture:nth-child(3) {
+	 transform: rotate(-3deg);
+	 z-index: 1;
+	 left: 48%;
+	 background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Buzz_Aldrin_and_the_U.S._flag_on_the_Moon_-_GPN-2001-000012.jpg/1024px-Buzz_Aldrin_and_the_U.S._flag_on_the_Moon_-_GPN-2001-000012.jpg);
+	 background-position: center;
+}
+ .stack__picture:nth-child(4) {
+	 right: -1%;
+	 transform: rotate(2deg);
+	 background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f8/Tim_Berners-Lee.jpg);
+}
+ 
